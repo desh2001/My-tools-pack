@@ -9,7 +9,7 @@
 const tools = [
   {
     id: "fb-comment-sorter",
-    title: "Facebook Comment Sorter",
+    title: "Facebook ",
     description: "Fetch all comments from any public Facebook post and instantly sort them by reaction count. Great for finding the most popular opinions.",
     icon: "💬",
     category: "Social",
@@ -91,17 +91,6 @@ const tools = [
     icon: "🔗",
     category: "Utility",
     tags: ["URL", "Links", "Analytics", "Tools"],
-    link: "https://github.com/desh2001/My-tools-pack",
-    status: "wip",
-    featured: false,
-  },
-  {
-    id: "markdown-editor",
-    title: "Live Markdown Editor",
-    description: "Write Markdown with a real-time side-by-side preview. Export as HTML or PDF. Includes syntax highlighting and dark mode.",
-    icon: "✍️",
-    category: "Utility",
-    tags: ["Markdown", "Editor", "Preview", "Dark Mode"],
     link: "https://github.com/desh2001/My-tools-pack",
     status: "wip",
     featured: false,
