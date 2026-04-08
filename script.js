@@ -106,17 +106,6 @@ const tools = [
     status: "wip",
     featured: false,
   },
-  {
-    id: "ai-caption-gen",
-    title: "AI Caption Generator",
-    description: "Generate catchy social media captions for any image or topic using AI. Supports tone selection: formal, funny, or professional.",
-    icon: "✨",
-    category: "AI",
-    tags: ["AI", "Captions", "Social", "GPT"],
-    link: "https://github.com/desh2001/My-tools-pack",
-    status: "wip",
-    featured: false,
-  },
 ];
 
 // ─────────────────────────────────────────────
