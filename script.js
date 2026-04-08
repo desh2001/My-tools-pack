@@ -169,9 +169,14 @@ function getCategoryClass(cat) {
 }
 
 function getStatusHTML(status) {
-  const labels = { live: "🟢 Live", wip: "🟡 WIP", beta: "🔵 Beta" };
+  const dots = {
+    live: `<svg width="7" height="7" viewBox="0 0 7 7"><circle cx="3.5" cy="3.5" r="3.5" fill="currentColor"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle></svg>`,
+    wip:  `<svg width="7" height="7" viewBox="0 0 7 7"><circle cx="3.5" cy="3.5" r="3.5" fill="currentColor" opacity="0.8"/></svg>`,
+    beta: `<svg width="7" height="7" viewBox="0 0 7 7"><circle cx="3.5" cy="3.5" r="3.5" fill="currentColor" opacity="0.8"/></svg>`,
+  };
+  const labels = { live: "Live", wip: "In Dev", beta: "Beta" };
   const classes = { live: "status-live", wip: "status-wip", beta: "status-beta" };
-  return `<span class="card-status ${classes[status]}">${labels[status]}</span>`;
+  return `<span class="card-status ${classes[status]}">${dots[status]}${labels[status]}</span>`;
 }
 
 function renderCards(list) {
@@ -204,9 +209,14 @@ function renderCards(list) {
       </div>
       <div class="card-footer">
         <a href="${tool.link}" target="_blank" class="card-link link-${catClass}" id="card-link-${tool.id}">
-          Open Tool
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
+          <span class="card-link-pulse"></span>
+          <svg class="card-link-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 17.776C9 19 10.343 19.773 11.4 19.1l7-4.288A1.5 1.5 0 0 0 18.4 12.5V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v8.5a1.5 1.5 0 0 0 .742 1.3L9 15.5v2.276z"/>
+            <path d="M12 2v6M9 5l3-3 3 3"/>
+          </svg>
+          <span>Launch</span>
+          <svg class="card-link-arrow" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M7 17L17 7M17 7H7M17 7v10"/>
           </svg>
         </a>
         ${getStatusHTML(tool.status)}
