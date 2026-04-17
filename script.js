@@ -18,6 +18,18 @@ const tools = [
     status: "live",
     featured: true
   },
+  {
+    id: "unicode-converter",
+    title: "Unicode Converter",
+    description: "Instantly convert text between Unicode and various encoding formats. A clean, fast utility for developers and designers working with character encodings.",
+    icon: "🔤",
+    category: "Utility",
+    tags: ["Unicode", "Encoding", "Text Converter", "Developer Tool", "Character Set"],
+    link: "https://unicode-converter-26.onrender.com/",
+    github: "https://github.com/desh2001/Unicode-Converter-26",
+    status: "live",
+    featured: false
+  },
 ];
 
 // ─────────────────────────────────────────────
