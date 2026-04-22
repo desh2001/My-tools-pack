@@ -30,6 +30,17 @@ const tools = [
     status: "live",
     featured: false
   },
+  {
+  id: "foc-obituary", 
+  title: "FOC Obituary Generator",
+  description: "Create and download custom, high-quality obituary and tribute posts with traditional Sinhala typography and elegant modern designs.",
+  icon: "🕯️", 
+  category: "Design Tools",
+  tags: ["Obituary", "Post Generator", "Sinhala Typography", "FOC", "Utility"],
+  link: "http://obituar.vikum.me/",
+  status: "live",
+  featured: true
+},
 ];
 
 // ─────────────────────────────────────────────
