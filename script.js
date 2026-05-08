@@ -40,7 +40,18 @@ const tools = [
   link: "http://obituar.vikum.me/",
   status: "live",
   featured: true
-},
+  },
+  {
+    id: "a4-sizer",
+    title: "A4 Sizer",
+    description: "Interactive A4 image placement application for manual and automatic arrangement of multiple images. Maximize space efficiency and export layouts effortlessly.",
+    icon: "📄",
+    category: "Utility",
+    tags: ["Image Layout", "PDF Export", "A4 Canvas", "Resizer", "Utility"],
+    link: "https://a4-sizer.onrender.com/",
+    status: "live",
+    featured: true
+  }
 ];
 
 // ─────────────────────────────────────────────
